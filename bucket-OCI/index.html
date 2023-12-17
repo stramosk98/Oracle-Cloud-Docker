@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mostra fotos de animais</title>
+</head>
+<body>
+    <h1>Fotos de animais <input type="button" id="button" value="Animal Randomico"></h1>
+    
+    <img id="animalImage" src="" alt="Imagem de Animal">
+
+    <script>
+        let lista = [
+            'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grzsywajf8fy/b/bucket-publico/o/bird.png',
+            'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grzsywajf8fy/b/bucket-publico/o/cat.png',
+            'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grzsywajf8fy/b/bucket-publico/o/dog.png',
+            'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grzsywajf8fy/b/bucket-publico/o/cow.png',
+            'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grzsywajf8fy/b/bucket-publico/o/horse.png',
+            'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grzsywajf8fy/b/bucket-publico/o/sheep.png',
+            'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grzsywajf8fy/b/bucket-publico/o/rooster.png'
+        ];
+
+        let button = document.getElementById("button");
+        let image  = document.getElementById("animalImage");
+
+        button.addEventListener('click', function() {
+            image.src = animalAleatorio();
+        })
+
+        function animalAleatorio() {
+            return lista[Math.floor(Math.random() * lista.length)];
+        }
+
+    </script>
+</body>
+</html>
