@@ -8,8 +8,7 @@
 - Vá na aba de Database Actions dentro do banco criado e em SQL;
 
 ### Crie uma tabela de usuários 
-``` CREATE TABLE usuarios ( id NUMBER GENERATE BY DEFAULT ON NULL AS IDENTIFY, nome VARCHAR(100), senha VARCHAR(20), telefone VARCHAR(20), email VARCHAR(100) )
-```
+``` CREATE TABLE usuarios ( id NUMBER GENERATE BY DEFAULT ON NULL AS IDENTIFY, nome VARCHAR(100), senha VARCHAR(20), telefone VARCHAR(20), email VARCHAR(100) ) ```
 
 - Após a criação do banco e tabela usuários
 
